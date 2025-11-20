@@ -108,7 +108,6 @@ If you experience or witness unacceptable behavior, or have any other concerns, 
 
 1. **Opening a GitHub Issue**: [Report Here](https://github.com/DrHazemAli/foundry-live-agents/issues)
 2. **Contacting Maintainers**: Use GitHub discussions for sensitive matters
-3. **Email**: Include detailed information about the incident
 
 All reports will be handled with discretion and confidentiality.
 

@@ -164,7 +164,7 @@ Explore **600+ voices** across **150+ languages**:
 
 ### 🤖 AI Models
 
-- **Voice Live Pro**: gpt-realtime, gpt-4o, gpt-4.1, gpt-5
+- **Voice Live Pro**: gpt-realtime, gpt-4o, gpt-4.1, gpt-5, gpt-5-chat
 - **Voice Live Basic**: gpt-realtime-mini, gpt-4o-mini, gpt-4.1-mini, gpt-5-mini
 - **Voice Live Lite**: gpt-5-nano, phi4-mm-realtime, phi4-mini
 
