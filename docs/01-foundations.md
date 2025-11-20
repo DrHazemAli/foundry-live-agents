@@ -137,7 +137,7 @@ Built-in audio processing:
 
 ### 3. Voice Options
 
-600+ voices across 150+ languages:
+20+ voices across 150+ languages:
 
 - **OpenAI Voices** (10) - Natural, expressive
 - **Azure Standard Voices** (500+) - Wide language support

@@ -1,5 +1,5 @@
 # Foundry Live Agents 🎙️
-A comprehensive learning repository and sample collection for building enterprise-scale voice agents using Azure Speech Voice Live API, featuring 600+ voices, multi-language support, and production-ready agent scenarios.
+A comprehensive learning repository and sample collection for building enterprise-scale voice agents using Azure Speech Voice Live API, featuring 20+ voices, multi-language support, and production-ready agent scenarios.
 
 ![Foundry Live Agents Banner](https://raw.githubusercontent.com/DrHazemAli/foundry-live-agents/main/assets/banner.jpg)
 
@@ -33,7 +33,7 @@ A comprehensive learning repository and sample collection for building enterpris
 
 This repository provides a **complete learning path** for building enterprise-scale voice agents using Azure Speech Voice Live API. Following the latest documentation from MS Ignite 2025, you'll master:
 
-- **Real-time voice interactions** with 600+ voices across 150+ languages
+- **Real-time voice interactions** with 20+ voices across 150+ languages
 - **Advanced VAD** (Voice Activity Detection) with Azure Semantic VAD Multilingual
 - **Function calling & VoiceRAG** patterns for intelligent context-aware agents
 - **Avatar integration** with WebRTC video streaming
@@ -136,7 +136,7 @@ samples/
 
 ## 🎨 Voice Catalog
 
-Explore **600+ voices** across **150+ languages**:
+Explore **20+ voices** across **150+ languages**:
 
 - **OpenAI Voices** (10): alloy, ash, ballad, coral, echo, sage, shimmer, verse, marin, cedar
 - **Azure Standard Voices** (500+): 150+ locales with neural quality

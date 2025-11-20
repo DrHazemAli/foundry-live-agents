@@ -6,7 +6,7 @@ A modern, interactive web application built with Vite, React, and TypeScript for
 
 - 🎙️ **Real-time Voice Interaction** - Full-duplex WebSocket voice communication
 - 🎨 **Beautiful UI** - Modern, responsive interface with smooth animations
-- 🗣️ **Voice Gallery** - Browse and preview 600+ voices with filters
+- 🗣️ **Voice Gallery** - Browse and preview 20+ voices with filters
 - 🌍 **Multi-Language** - Support for 150+ languages with auto-detection
 - ⚙️ **Configuration Explorer** - Visual configurator for all Voice Live settings
 - 🤖 **Agent Scenarios** - Pre-built agent templates (customer support, travel, healthcare, etc.)
@@ -140,7 +140,7 @@ playground/
 
 ### 1. Voice Gallery
 
-Browse and filter 600+ voices:
+Browse and filter 20+ voices:
 
 ```typescript
 // Filter by language, gender, style

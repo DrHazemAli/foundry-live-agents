@@ -216,7 +216,7 @@ function App() {
               <div>
                 <h3 className="text-sm font-medium text-white">Welcome to Voice Live Playground</h3>
                 <p className="text-xs text-secondary-400">
-                  Configure and test Azure Speech Voice Live API with 600+ voices and multiple languages
+                  Configure and test Azure Speech Voice Live API with 20+ voices and multiple languages
                 </p>
               </div>
             </div>

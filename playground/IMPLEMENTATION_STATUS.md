@@ -67,7 +67,7 @@ The playground is a fully functional interactive web application for exploring a
 - ✅ Push-to-talk functionality
 
 ### 🗣️ Voice Gallery
-- ✅ Browse 600+ voices (13 shown in sample)
+- ✅ Browse 20+ voices (13 shown in sample)
 - ✅ Search by name/language/description
 - ✅ Filter by category (OpenAI, Azure Standard, Azure HD)
 - ✅ Filter by gender (Male, Female, Neutral)
@@ -305,7 +305,7 @@ Total: ~2,700 lines of production code
 - [ ] Advanced configuration panels
 - [ ] Visual function call debugger
 - [ ] Code export tab implementation
-- [ ] Full voice catalog (600+ voices)
+- [ ] Full voice catalog (20+ voices)
 - [ ] Voice sample playback
 - [ ] Audio file upload/playback
 - [ ] Conversation export (JSON, transcript)
