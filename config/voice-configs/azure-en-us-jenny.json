@@ -1,0 +1,26 @@
+{
+  "model": "gpt-4o",
+  "type": "azure-standard",
+  "name": "en-US-Jenny",
+  "locale": "en-US",
+  "characteristics": {
+    "gender": "female",
+    "age": "young-adult",
+    "tone": "warm-friendly",
+    "pace": "medium",
+    "expressiveness": "high"
+  },
+  "useCases": [
+    "customer-support",
+    "healthcare",
+    "education",
+    "general-assistant"
+  ],
+  "languages": ["en-US"],
+  "sample_text": "Hi there! I'd be happy to help you with that. Let me look into it for you.",
+  "configuration": {
+    "type": "azure-standard",
+    "name": "en-US-Jenny"
+  },
+  "notes": "Most popular Azure voice for customer support. Warm, professional, and clear."
+}

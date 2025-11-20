@@ -1,0 +1,131 @@
+{
+  "type": "azure_semantic_vad_multilingual",
+  "description": "Multilingual semantic voice activity detection",
+  "useCases": [
+    "global-applications",
+    "multi-language-support",
+    "international-call-centers",
+    "multilingual-agents"
+  ],
+  "supportedLanguages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "pt",
+    "zh",
+    "ko",
+    "hi"
+  ],
+  "configuration": {
+    "type": "azure_semantic_vad_multilingual",
+    "threshold": 0.5,
+    "prefix_padding_ms": 300,
+    "silence_duration_ms": 700,
+    "remove_filler_words": true,
+    "interrupt_response": true,
+    "auto_truncate": true,
+    "end_of_utterance_detection": {
+      "model": "semantic_detection_v1",
+      "threshold_level": "default",
+      "timeout_ms": 1500
+    }
+  },
+  "languageSpecificSettings": {
+    "en": {
+      "threshold": 0.5,
+      "silence_duration_ms": 700,
+      "note": "Standard English settings"
+    },
+    "es": {
+      "threshold": 0.5,
+      "silence_duration_ms": 750,
+      "note": "Spanish speakers may have longer pauses"
+    },
+    "fr": {
+      "threshold": 0.5,
+      "silence_duration_ms": 700,
+      "note": "French liaison may affect detection"
+    },
+    "de": {
+      "threshold": 0.5,
+      "silence_duration_ms": 700,
+      "note": "German compound words work well"
+    },
+    "ja": {
+      "threshold": 0.5,
+      "silence_duration_ms": 800,
+      "note": "Japanese pauses may be longer"
+    },
+    "zh": {
+      "threshold": 0.5,
+      "silence_duration_ms": 750,
+      "note": "Tonal language, works well"
+    },
+    "pt": {
+      "threshold": 0.5,
+      "silence_duration_ms": 700,
+      "note": "Portuguese rhythm handled well"
+    },
+    "ko": {
+      "threshold": 0.5,
+      "silence_duration_ms": 750,
+      "note": "Korean speech patterns supported"
+    },
+    "hi": {
+      "threshold": 0.5,
+      "silence_duration_ms": 750,
+      "note": "Hindi multilingual context"
+    },
+    "it": {
+      "threshold": 0.5,
+      "silence_duration_ms": 700,
+      "note": "Italian expressiveness handled"
+    }
+  },
+  "pros": [
+    "Supports 10+ major languages",
+    "Language-aware detection",
+    "Cultural pause patterns",
+    "Seamless language switching",
+    "All Azure Semantic VAD features"
+  ],
+  "cons": [
+    "Limited to 10 languages",
+    "Requires language specification or auto-detect",
+    "Slightly more resource intensive"
+  ],
+  "tuningGuide": {
+    "global_support": {
+      "threshold": 0.5,
+      "remove_filler_words": true,
+      "silence_duration_ms": 750,
+      "note": "Conservative for all languages"
+    },
+    "language_learning": {
+      "threshold": 0.6,
+      "silence_duration_ms": 1000,
+      "interrupt_response": false,
+      "note": "Patient, lets learners complete thoughts"
+    },
+    "multilingual_call_center": {
+      "threshold": 0.4,
+      "remove_filler_words": true,
+      "auto_truncate": true,
+      "end_of_utterance_detection": {
+        "threshold_level": "default",
+        "timeout_ms": 1500
+      },
+      "note": "Responsive across languages"
+    }
+  },
+  "bestPractices": [
+    "Use with input_audio_transcription language auto-detect",
+    "Adjust silence_duration_ms per language if needed",
+    "Enable remove_filler_words for all languages",
+    "Test with native speakers of each language",
+    "Monitor detection accuracy per language"
+  ]
+}

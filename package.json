@@ -1,0 +1,46 @@
+{
+  "name": "foundry-live-agents",
+  "version": "1.0.0",
+  "description": "Enterprise-Scale Voice Agent Tutorial & Interactive Samples with Azure Speech Voice Live API",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DrHazemAli/foundry-live-agents.git"
+  },
+  "keywords": [
+    "azure",
+    "speech",
+    "voice-live",
+    "ai",
+    "voice-agent",
+    "gpt-realtime",
+    "microsoft-foundry",
+    "conversational-ai",
+    "tutorial"
+  ],
+  "author": "Dr. Hazem Ali",
+  "license": "MIT",
+  "scripts": {
+    "playground": "cd playground && npm install && npm run dev",
+    "playground:build": "cd playground && npm run build",
+    "playground:preview": "cd playground && npm run preview",
+    "samples:typescript": "cd samples/typescript && npm install",
+    "samples:python": "cd samples/python && pip install -r requirements.txt",
+    "samples:go": "cd samples/go && go mod download",
+    "samples:csharp": "cd samples/csharp && dotnet restore",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"Linting not configured yet\"",
+    "format": "echo \"Formatting not configured yet\""
+  },
+  "workspaces": [
+    "playground",
+    "samples/typescript/*",
+    "utilities/websocket-client",
+    "utilities/audio-utils"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

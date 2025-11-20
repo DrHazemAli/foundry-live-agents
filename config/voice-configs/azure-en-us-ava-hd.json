@@ -1,0 +1,43 @@
+{
+  "model": "gpt-4o",
+  "type": "azure-standard",
+  "name": "en-US-Ava:DragonHDLatestNeural",
+  "locale": "en-US",
+  "hd": true,
+  "characteristics": {
+    "gender": "female",
+    "age": "adult",
+    "tone": "professional-expressive",
+    "pace": "medium",
+    "expressiveness": "very-high",
+    "quality": "premium"
+  },
+  "useCases": [
+    "sales",
+    "marketing",
+    "storytelling",
+    "premium-support"
+  ],
+  "languages": ["en-US"],
+  "sample_text": "That's absolutely fantastic! I'm so glad I could help you with that today.",
+  "configuration": {
+    "type": "azure-standard",
+    "name": "en-US-Ava:DragonHDLatestNeural",
+    "temperature": 0.8
+  },
+  "temperatureGuidance": {
+    "conservative": 0.3,
+    "balanced": 0.6,
+    "expressive": 0.9
+  },
+  "regionalAvailability": [
+    "eastus",
+    "eastus2",
+    "westus2",
+    "westeurope",
+    "southeastasia",
+    "centralindia",
+    "swedencentral"
+  ],
+  "notes": "Premium HD voice with temperature control. Most natural and expressive Azure voice."
+}

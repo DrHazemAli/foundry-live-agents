@@ -1,0 +1,14 @@
+{
+  "name": "@foundry-live-agents/event-handlers",
+  "version": "1.0.0",
+  "description": "TypeScript types, validators, and mock generators for Voice Live API events",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": ["azure", "speech", "types", "events", "typescript"],
+  "author": "Foundry Live Agents",
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+  "AzureSpeech": {
+    "ApiKey": "your-azure-speech-api-key-here",
+    "Region": "eastus",
+    "Deployment": "gpt-4o-realtime-preview"
+  }
+}

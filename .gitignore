@@ -1,0 +1,267 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+
+# Azure Credentials
+azure-credentials.json
+service-principal.json
+*.pem
+*.key
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.venv/
+venv/
+ENV/
+env/
+vendor/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+.eggs/
+*.egg
+out/
+target/
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# Caches
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.cache
+.npm/
+.yarn/
+.pnp.*
+.turbo/
+.next/
+.nuxt/
+.docusaurus/
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+go.work.sum
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+*.vsidx
+*.v2
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Swift/Xcode
+.build/
+DerivedData/
+*.xcodeproj
+*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+*.xcuserdata
+*.xcuserdatad
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+.swiftpm/
+Packages/
+Package.pins
+Package.resolved
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+debug.log
+error.log
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+coverage/
+*.cover
+.hypothesis/
+test-results/
+junit.xml
+coverage.xml
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.old
+.temporary/
+
+# Audio files (for testing, not source controlled)
+*.wav
+*.mp3
+*.ogg
+*.m4a
+*.flac
+*.aac
+*.wma
+test-audio/
+recordings/
+audio-samples/
+
+# Video files (avatar testing)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.webm
+video-samples/
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+Pipfile.lock
+poetry.lock
+Cargo.lock
+composer.lock
+
+# OS
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Trash-*
+.directory
+.fuse_hidden*
+.nfs*
+
+# Large model files
+*.bin
+*.onnx
+*.h5
+*.pb
+*.pt
+*.pth
+*.safetensors
+models/
+checkpoints/
+
+# Documentation builds
+docs/_build/
+docs/.doctrees/
+site/
+_site/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Config backups
+*.config.bak
+*.backup
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# Compiled files
+*.class
+*.o
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraformrc
+terraform.rc
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes
+kubeconfig
+*.kubeconfig
+
+# Secrets
+secrets/
+credentials/
+*.secret
+*.secrets
+
+# Coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# Debug
+debug/
+.debug/
+
+# Performance
+*.prof
+*.trace
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Linux
+.directory
+.Trash-*
+
+# Windows
+ehthumbs.db
+ehthumbs_vista.db

@@ -1,0 +1,14 @@
+{
+  "name": "@foundry-live-agents/audio-utils",
+  "version": "1.0.0",
+  "description": "Audio processing utilities for Azure Speech Voice Live API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": ["azure", "speech", "audio", "pcm16", "processing"],
+  "author": "Foundry Live Agents",
+  "license": "MIT"
+}

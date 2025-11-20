@@ -1,0 +1,14 @@
+{
+  "name": "@foundry-live-agents/config-templates",
+  "version": "1.0.0",
+  "description": "Pre-built configuration templates for Azure Speech Voice Live API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": ["azure", "speech", "config", "templates"],
+  "author": "Foundry Live Agents",
+  "license": "MIT"
+}

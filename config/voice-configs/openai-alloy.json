@@ -1,0 +1,25 @@
+{
+  "model": "gpt-realtime",
+  "type": "openai",
+  "name": "alloy",
+  "characteristics": {
+    "gender": "neutral",
+    "age": "adult",
+    "tone": "balanced",
+    "pace": "medium",
+    "expressiveness": "moderate"
+  },
+  "useCases": [
+    "customer-support",
+    "general-assistant",
+    "information-hotline",
+    "appointment-scheduling"
+  ],
+  "languages": ["en-US"],
+  "sample_text": "Hello! I'm here to help you today. What can I assist you with?",
+  "configuration": {
+    "type": "openai",
+    "name": "alloy"
+  },
+  "notes": "Most versatile OpenAI voice. Professional and friendly. Works only with gpt-realtime model."
+}

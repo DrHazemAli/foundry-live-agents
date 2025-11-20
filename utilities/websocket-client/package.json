@@ -1,0 +1,17 @@
+{
+  "name": "@foundry-live-agents/websocket-client",
+  "version": "1.0.0",
+  "description": "Production-ready WebSocket client for Azure Speech Voice Live API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "ws": "^8.14.2"
+  },
+  "keywords": ["azure", "speech", "websocket", "voice-live"],
+  "author": "Foundry Live Agents",
+  "license": "MIT"
+}

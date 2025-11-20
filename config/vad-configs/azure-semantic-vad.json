@@ -1,0 +1,123 @@
+{
+  "type": "azure_semantic_vad",
+  "description": "AI-powered semantic voice activity detection",
+  "useCases": [
+    "noisy-environments",
+    "multi-speaker",
+    "production-quality",
+    "robust-detection"
+  ],
+  "configuration": {
+    "type": "azure_semantic_vad",
+    "threshold": 0.5,
+    "prefix_padding_ms": 300,
+    "silence_duration_ms": 700,
+    "remove_filler_words": true,
+    "interrupt_response": true,
+    "auto_truncate": true,
+    "end_of_utterance_detection": {
+      "model": "semantic_detection_v1",
+      "threshold_level": "default",
+      "timeout_ms": 1500
+    }
+  },
+  "parameters": {
+    "threshold": {
+      "type": "number",
+      "range": [0.0, 1.0],
+      "default": 0.5,
+      "description": "Semantic confidence threshold",
+      "guidance": {
+        "aggressive": 0.3,
+        "balanced": 0.5,
+        "conservative": 0.7
+      }
+    },
+    "remove_filler_words": {
+      "type": "boolean",
+      "default": true,
+      "description": "Filter out um, uh, hmm, etc."
+    },
+    "interrupt_response": {
+      "type": "boolean",
+      "default": true,
+      "description": "Allow user to interrupt AI"
+    },
+    "auto_truncate": {
+      "type": "boolean",
+      "default": true,
+      "description": "Stop AI when interrupted"
+    },
+    "end_of_utterance_detection": {
+      "model": {
+        "type": "string",
+        "default": "semantic_detection_v1",
+        "description": "EOD model version"
+      },
+      "threshold_level": {
+        "type": "string",
+        "enum": ["aggressive", "default", "conservative"],
+        "default": "default",
+        "description": "Utterance ending sensitivity"
+      },
+      "timeout_ms": {
+        "type": "number",
+        "default": 1500,
+        "description": "Max time to wait for more speech"
+      }
+    }
+  },
+  "pros": [
+    "Robust to background noise",
+    "Semantic understanding",
+    "Fewer false positives",
+    "Better turn-taking",
+    "Filler word removal",
+    "Natural interruptions"
+  ],
+  "cons": [
+    "Slightly higher latency",
+    "English-optimized",
+    "More compute intensive"
+  ],
+  "tuningGuide": {
+    "call_center": {
+      "threshold": 0.4,
+      "remove_filler_words": true,
+      "interrupt_response": true,
+      "end_of_utterance_detection": {
+        "threshold_level": "default",
+        "timeout_ms": 1200
+      },
+      "note": "Balanced for professional conversations"
+    },
+    "customer_support": {
+      "threshold": 0.5,
+      "remove_filler_words": true,
+      "interrupt_response": true,
+      "auto_truncate": true,
+      "end_of_utterance_detection": {
+        "threshold_level": "conservative",
+        "timeout_ms": 1800
+      },
+      "note": "Patient, lets customer finish thoughts"
+    },
+    "interactive_demo": {
+      "threshold": 0.4,
+      "silence_duration_ms": 500,
+      "interrupt_response": true,
+      "end_of_utterance_detection": {
+        "threshold_level": "aggressive",
+        "timeout_ms": 1000
+      },
+      "note": "Fast-paced, responsive interactions"
+    }
+  },
+  "bestPractices": [
+    "Enable noise suppression alongside VAD",
+    "Use conservative threshold for important conversations",
+    "Enable auto_truncate for natural interruptions",
+    "Remove filler words in most scenarios",
+    "Adjust timeout_ms based on user speaking pace"
+  ]
+}

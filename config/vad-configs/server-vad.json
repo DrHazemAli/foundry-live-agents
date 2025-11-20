@@ -1,0 +1,67 @@
+{
+  "type": "server_vad",
+  "description": "Simple volume-based voice activity detection",
+  "useCases": [
+    "quiet-environments",
+    "single-speaker",
+    "testing-development"
+  ],
+  "configuration": {
+    "type": "server_vad",
+    "threshold": 0.5,
+    "prefix_padding_ms": 300,
+    "silence_duration_ms": 500
+  },
+  "parameters": {
+    "threshold": {
+      "type": "number",
+      "range": [0.0, 1.0],
+      "default": 0.5,
+      "description": "Volume threshold for speech detection",
+      "guidance": {
+        "sensitive": 0.3,
+        "balanced": 0.5,
+        "conservative": 0.7
+      }
+    },
+    "prefix_padding_ms": {
+      "type": "number",
+      "range": [0, 1000],
+      "default": 300,
+      "description": "Audio buffered before speech detection"
+    },
+    "silence_duration_ms": {
+      "type": "number",
+      "range": [0, 5000],
+      "default": 500,
+      "description": "Silence required to end speech"
+    }
+  },
+  "pros": [
+    "Fast and simple",
+    "Low latency",
+    "No model overhead",
+    "Works in all scenarios"
+  ],
+  "cons": [
+    "Sensitive to background noise",
+    "No semantic understanding",
+    "May trigger on non-speech sounds",
+    "Requires quiet environment"
+  ],
+  "tuningGuide": {
+    "noisy_environment": {
+      "threshold": 0.7,
+      "silence_duration_ms": 700,
+      "note": "Use Azure Semantic VAD instead"
+    },
+    "quick_responses": {
+      "silence_duration_ms": 300,
+      "note": "May cause premature endings"
+    },
+    "thoughtful_pauses": {
+      "silence_duration_ms": 1000,
+      "note": "Allows time to think"
+    }
+  }
+}
